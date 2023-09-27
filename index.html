@@ -102,6 +102,7 @@
               <p><span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Ruby on Rails</span><span> • </span>
                 <span class="text-lg bg-yellow-200 p-[0.1rem] rounded-lg">JavaScript</span><span> • </span>
                 <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">jQuery</span><span> • </span>
+                <span class="text-lg bg-green-200 p-[0.1rem] rounded-lg">StimulusJS</span>
                 <span class="text-lg bg-teal-200 p-[0.1rem] rounded-lg">Tailwind</span><span> • </span>
                 <span class="text-lg bg-purple-200 p-[0.1rem] rounded-lg">Bootstrap</span><span> • </span>
                 <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">HTML</span><span> • </span>
@@ -231,56 +232,215 @@
         <!-- Projects -->
         <section class="px-20 mt-10">
           <h4 class="mb-8 text-3xl font-bold text-center md:text-left" id="projects">Projects</h4>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div class="grid grid-cols-1 md:grid-cols-6 my-10 relative">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 class="text-xl md:text-2xl  font-bold">Jazzed Sips</h5>
+              <h5 class="text-xl md:text-2xl font-bold">Jazzed Sips</h5>
               <p>Sep 2023</p>
+              <div class="w-4/5 mt-1 leading-8"><span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Ruby on Rails</span>
+                <span class="text-lg bg-yellow-200 p-[0.1rem] rounded-lg">JavaScript</span>
+                <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">jQuery</span>
+                <span class="text-lg bg-teal-200 p-[0.1rem] rounded-lg">Tailwind</span>
+                <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">HTML</span>
+                <span class="text-lg bg-gray-200 p-[0.1rem] rounded-lg">Inkscape</span>
+              </div>
             </div>
             <div class="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+              <p><span class="font-bold font-heading">Jazzed Sips</span> breathes life into a stylish and jazz-inspired coffee shop's online presence. It's built on a foundation of HTML, which structures the content, and utilizes Tailwind CSS to create an elegant and responsive design. Ruby on Rails powers the backend, handling data management, while JavaScript, with the jQuery library, adds dynamic features and enhances user interactions.</p>
+            </div>
+            <!-- Buttons -->
+            <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
+              <a href="https://github.com/UmutAkturk14/Jazzed-Sips-202309252243">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <!-- Buttons mobile -->
+          <div class="lg:hidden gap-4 flex justify-end">
+            <a href="https://github.com/UmutAkturk14/Jazzed-Sips-202309252243">
+              <button class="flex justify-center items-center -mt-8 p-2 rounded-lg bg-gray-200">
+                <span class="mx-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                  class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </span>
+                <span class="mx-1">View code</span>
+              </button>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-6 my-10 relative">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 class="text-xl md:text-2xl  font-bold">Myriad Market</h5>
+              <h5 class="text-xl md:text-2xl font-bold">Myriad Market</h5>
               <p>Aug 2023 - Sep 2023</p>
+              <div class="w-4/5 mt-1 leading-8"><span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Ruby on Rails</span>
+                <span class="text-lg bg-yellow-200 p-[0.1rem] rounded-lg">JavaScript</span>
+                <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">jQuery</span>
+                <span class="text-lg bg-teal-200 p-[0.1rem] rounded-lg">Tailwind</span>
+                <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">HTML</span>
+                <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">PostgreSQL</span>
+                <span class="text-lg bg-gray-200 p-[0.1rem] rounded-lg">Inkscape</span>
+              </div>
             </div>
             <div class="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+              <p><span class="font-bold font-heading">Myriad Market</span> is a versatile and dynamic online marketplace web application designed as a marketplace where people can buy, sell, rent, loan properties, vehicles, and services. With an intuitive and responsive user interface and a comprehensive set of features, MM offers a seamless platform for connecting users and facilitating transactions.</p>
+            </div>
+            <!-- Buttons -->
+            <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
+              <a href="https://github.com/UmutAkturk14/myriad-market">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
+            </div>
+            <!-- Buttons mobile -->
+            <div class="lg:hidden gap-4 flex justify-end">
+              <a href="https://github.com/UmutAkturk14/myriad-market">
+                <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div class="grid grid-cols-1 md:grid-cols-6 my-10 relative">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
               <h5 class="text-xl md:text-2xl  font-bold">ZoneFit</h5>
               <p>Jun 2023 - Jul 2023</p>
+              <div class="w-4/5 mt-1 leading-8"><span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Ruby on Rails</span>
+                <span class="text-lg bg-yellow-200 p-[0.1rem] rounded-lg">JavaScript</span>
+                <span class="text-lg bg-green-200 p-[0.1rem] rounded-lg">StimulusJS</span>
+                <span class="text-lg bg-purple-200 p-[0.1rem] rounded-lg">Bootstrap</span>
+                <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">HTML</span>
+                <span class="text-lg bg-blue-300 p-[0.1rem] rounded-lg">CSS</span>
+                <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Git</span>
+                <span class="text-lg bg-purple-300 p-[0.1rem] rounded-lg">Heroku</span>
+                <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">PostgreSQL</span>
+              </div>
             </div>
             <div class="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+              <p><a href="http://zonefit.life" class="font-bold font-heading">ZoneFit</a> is a web app made for fitness/healthy living enthusiasts providing searchable workout videos and recipes while mixing it with social media features such as commenting on workouts and recipes, creating posts, commenting on posts, adding/accepting/rejecting friends, chatting in public communities, chatting in direct messages. See the project repository for details.</p>
+            </div>
+            <!-- Buttons -->
+            <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
+              <a href="https://github.com/UmutAkturk14/ZoneFit">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
+              <a href="http://zonefit.life">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                    </svg>
+                  </span>
+                  <span class="mx-1">View page</span>
+                </button>
+              </a>
+            </div>
+            <!-- Buttons mobile -->
+            <div class="lg:hidden gap-4 flex justify-end">
+              <a href="https://github.com/UmutAkturk14/ZoneFit">
+                <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
+              <a href="http://zonefit.life">
+                <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                    </svg>
+                  </span>
+                  <span class="mx-1">View page</span>
+                </button>
+              </a>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div class="grid grid-cols-1 md:grid-cols-6 my-10 relative">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
               <h5 class="text-xl md:text-2xl  font-bold">Chic Swap</h5>
               <p>May 2023</p>
+              <div class="w-4/5 mt-1 leading-8"><span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Ruby on Rails</span>
+                <span class="text-lg bg-yellow-200 p-[0.1rem] rounded-lg">JavaScript</span>
+                <span class="text-lg bg-green-200 p-[0.1rem] rounded-lg">StimulusJS</span>
+                <span class="text-lg bg-purple-200 p-[0.1rem] rounded-lg">Bootstrap</span>
+                <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">HTML</span>
+                <span class="text-lg bg-blue-300 p-[0.1rem] rounded-lg">CSS</span>
+                <span class="text-lg bg-red-200 p-[0.1rem] rounded-lg">Git</span>
+                <span class="text-lg bg-purple-300 p-[0.1rem] rounded-lg">Heroku</span>
+                <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">PostgreSQL</span>
+              </div>
             </div>
             <div class="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+              <p><span class="font-heading font-bold">Chic Swap</span> is a high-end design bag marketplace. This elegant platform showcases exclusive offers, facilitates new listings, and empowers users to effortlessly rent exquisite bags for their desired durations.</p>
+            </div>
+            <!-- Buttons -->
+            <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
+              <a href="https://github.com/UmutAkturk14/Rent-A-Bag">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
+            </div>
+            <!-- Buttons mobile -->
+            <div class="lg:hidden gap-4 flex justify-end">
+              <a href="https://github.com/UmutAkturk14/Rent-A-Bag">
+                <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
+                  <span class="mx-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </span>
+                  <span class="mx-1">View code</span>
+                </button>
+              </a>
             </div>
           </div>
         </section>
