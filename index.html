@@ -26,24 +26,24 @@
   <div class="relative text-gray-800 bg-gray-50">
     <!-- Navbar -->
         <header>
-          <nav class="w-full fixed top-0 bg-gray-50" id="navbar">
-            <div class="flex justify-between w-full px-16 py-8">
+          <nav class="w-full z-50  md:fixed top-0 bg-gray-50" id="navbar">
+            <div class="flex justify-between w-full md:px-6 md:py-6">
               <!-- Left Nav -->
               <div>
                 <ul
-                  class="flex flex-col text-left md:flex-row space-y-5 md:space-y-0 md:space-x-6 text-xl md:text-2xl">
+                  class="flex flex-col text-left md:flex-row space-y-1 md:space-y-0 md:space-x-6 text-xl md:text-2xl">
                   <li class="text-left">
-                    <button href="" id="experience-button">
+                    <button href="" id="experience-button" class="hover:bg-gray-700 hover:text-white p-1 rounded-lg duration-300">
                       Experience
                     </button>
                   </li>
                   <li class="text-left">
-                    <button href="" id="projects-button">
+                    <button href="" id="projects-button" class="hover:bg-gray-700 hover:text-white p-1 rounded-lg duration-300">
                       Projects
                     </button>
                   </li>
                   <li class="text-left">
-                    <button href="" id="contact-button">
+                    <button href="" id="contact-button" class="hover:bg-gray-700 hover:text-white p-1 rounded-lg duration-300">
                       Contact
                     </button>
                   </li>
@@ -85,7 +85,7 @@
           <!-- style="height: 50vh" -->
           <div class="flex flex-col items-center justify-center text-center h-screen-half">
             <!-- image -->
-            <img class="md:hidden object-cover w-15 h-40 rounded-full mt-16 mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
+            <img class="lg:hidden object-cover w-15 h-40 rounded-full xl:mt-16 mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
               src="./images/cartoon-me.svg" alt="Umut Akturk">
             <h1 class="text-5xl sm:text-6xl lg:text-9xl font-heading">Umut Akturk</h1>
             <h2 class="font-light text-2xl sm:text-4xl lg:text-6xl text-gray-600">Full Stack Developer</h2>
@@ -95,7 +95,7 @@
         <!-- image section -->
         <section class="flex items-center justify-between px-8 mb-20 tracking-wider">
           <!-- Summary (left) -->
-          <div class="flex flex-col w-full md:w-1/3 space-y-12 text-center md:text-left">
+          <div class="flex flex-col w-full xl:w-1/3 space-y-12 text-center xl:text-left">
             <div class="flex flex-col px-10 md:px-20">
               <h3 class="text-xl font-bold">Skills</h3>
               <br>
@@ -116,7 +116,7 @@
             <div class="px-10 md:px-20">
               <h3 class="text-xl font-bold">Summary</h3>
               <br>
-              <p class="w-full md:w-2/3">A versatile full-stack developer with a background in linguistics and literature, and professional experience in editing. Passionate about web development, I bring creativity, linguistic expertise, and attention to detail to craft captivating and user-friendly web experiences. I'm eager to explore exciting projects and opportunities. You can find my resume <a href="https://app.enhancv.com/share/d8d7ec4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" class="underline font-bold underline-offset-3">here</a>.</p>
+              <p class="w-full xl:w-2/3">A versatile full-stack developer with a background in linguistics and literature, and professional experience in editing. Passionate about web development, I bring creativity, linguistic expertise, and attention to detail to craft captivating and user-friendly web experiences. I'm eager to explore exciting projects and opportunities. You can find my resume <a href="https://app.enhancv.com/share/d8d7ec4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" class="underline font-bold underline-offset-3">here</a>.</p>
             </div>
             <div class="px-10 md:px-20">
               <br>
@@ -126,10 +126,10 @@
             </div>
           </div>
           <!-- image -->
-          <img class="hidden md:block object-cover w-1/4 h-1/2 rounded-full ring-gray-500/50 ring-offset-[30px]"
+          <img class="hidden xl:block object-cover xl:w-1/4 xl:h-1/2 rounded-full ring-gray-500/50 ring-offset-[30px]"
             src="./images/cartoon-me.svg" alt="Your Name Here">
           <!-- statistics (right) -->
-          <div class="hidden md:flex flex-col w-1/3 space-y-12 text-right">
+          <div class="hidden xl:flex flex-col w-1/3 space-y-12 text-right">
             <div class="px-20">
               <h4 class="text-xl font-bold">Experience</h4>
               <br>
@@ -149,42 +149,14 @@
         </section>
         <!-- /image section -->
         <hr class="border-gray-400 mx-44" />
-        <!-- Resume -->
-        <section class="px-20 mt-10">
+        <!-- Experience -->
+        <section class="px-12 mt-10">
           <h4 class="mb-8 text-3xl font-bold text-center md:text-left" id="experience">Experience</h4>
           <div class="grid grid-cols-1 md:grid-cols-6 my-10">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 class="text-xl md:text-2xl font-bold">Full Stack Developer</h5>
-              <h6 class="text-lg font-bold">Facebook</h6>
-              <p>Jan 2015 - present</p>
-            </div>
-            <div class="flex flex-col col-span-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
-            <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 class="text-xl md:text-2xl  font-bold">Software Developer</h5>
-              <h6 class="text-lg font-bold">Google</h6>
-              <p>Feb 2010 - Jan 2015</p>
-            </div>
-            <div class="flex flex-col col-span-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
-            <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 class="text-xl md:text-2xl  font-bold">Web Developer</h5>
-              <h6 class="text-lg font-bold">IBM</h6>
-              <p>Apr 2008 - Feb 2010</p>
+              <h5 class="text-xl md:text-2xl font-bold">Editor</h5>
+              <h6 class="text-lg font-bold">Company</h6>
+              <p>Apr 2019 - Jan 2023</p>
             </div>
             <div class="flex flex-col col-span-4">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
@@ -196,41 +168,45 @@
           </div>
         </section>
         <hr class="border-gray-400 mx-44" />
-        <!-- Resume -->
-        <section class="px-20 mt-10">
+        <!-- Education -->
+        <section class="px-12 mt-10">
           <h4 class="mb-8 text-3xl font-bold text-center md:text-left">Education</h4>
-          <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div class="grid grid-cols-1 md:grid-cols-6 my-10 relative education">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 class="text-xl md:text-2xl  font-bold">Web Development Bootcamp</h5>
+              <h5 class="text-xl md:text-2xl font-bold">Web Development Bootcamp</h5>
               <h6 class="text-lg font-bold">Le Wagon</h6>
               <p>Jan 2023 - Jul 2023</p>
             </div>
-            <div class="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+            <div class="flex flex-col col-span-4 text-justify">
+              <p>I completed Le Wagon's Web Development Bootcamp remotely, gaining expertise in a versatile tech stack. This encompassed front-end skills like HTML, CSS, and JavaScript, along with Ruby on Rails for back-end development and PostgreSQL for database management. Through collaborative projects and hands-on learning, I solidified my ability to create user-friendly websites and dynamic web applications. This experience not only enhanced my web development skills but also elevated my problem-solving and teamwork capabilities, preparing me to contribute effectively to innovative digital projects.</p>
+            </div>
+            <!-- Buttons -->
+            <div class="absolute -bottom-10 right-0 hidden lg:flex mr-8 gap-4">
+              <a href="https://kitt.lewagon.com/schoolings/27097/public_diploma?token=59351637e87103fca34abb0692d6625aa603016b98bf4cab3ff1370759e7efbc" class="hidden">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-yellow-200 duration-500">
+                  <span class="mx-1">
+                    <svg class="w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7V37C10 38.6569 11.3431 40 13 40H26V36.4649C24.8044 35.7733 24 34.4806 24 33C24 30.7909 25.7909 29 28 29C30.2091 29 32 30.7909 32 33C32 34.4806 31.1956 35.7733 30 36.4649V40H35C36.6569 40 38 38.6569 38 37V7C38 5.34315 36.6569 4 35 4H13C11.3431 4 10 5.34315 10 7ZM28 35C29.1046 35 30 34.1046 30 33C30 31.8954 29.1046 31 28 31C26.8954 31 26 31.8954 26 33C26 34.1046 26.8954 35 28 35ZM18 11C18 10.4477 18.4477 10 19 10L29 10C29.5523 10 30 10.4477 30 11C30 11.5523 29.5523 12 29 12L19 12C18.4477 12 18 11.5523 18 11ZM15 16C14.4477 16 14 16.4477 14 17C14 17.5523 14.4477 18 15 18H33C33.5523 18 34 17.5523 34 17C34 16.4477 33.5523 16 33 16H15ZM14 21C14 20.4477 14.4477 20 15 20H33C33.5523 20 34 20.4477 34 21C34 21.5523 33.5523 22 33 22H15C14.4477 22 14 21.5523 14 21ZM15 24C14.4477 24 14 24.4477 14 25C14 25.5523 14.4477 26 15 26H33C33.5523 26 34 25.5523 34 25C34 24.4477 33.5523 24 33 24H15Z" fill="#333333"/> <path d="M26 44V40H30V44L28 42.5L26 44Z" fill="#333333"/> </svg>
+                  </span>
+                  <span class="mx-1">View certification</span>
+                </button>
+              </a>
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-6 my-10">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
               <h5 class="text-xl md:text-2xl  font-bold">Comparative Linguistics and Literature</h5>
               <h6 class="text-lg font-bold">Galatasaray University</h6>
+              <p>B.A. in Comparative Linguistics and Literature</p>
               <p>Sep 2014 - Jul 2020</p>
             </div>
-            <div class="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+            <div class="flex flex-col col-span-4 text-justify">
+              <p>My academic journey at Galatasaray University was centered on Comparative Linguistics and Literature, which encompassed linguistic, translation, and literary studies. Throughout my studies, I developed a keen ability to analyze and interpret complex texts, conduct literary analysis, and engage with translation and linguistic theory. My degree in Comparative Linguistics and Literature has provided me with a solid foundation for a career that values cross-cultural understanding, effective communication, a profound passion for the written word, and a strong attention to detail.</p>
             </div>
           </div>
         </section>
         <hr class="border-gray-400 mx-44" />
         <!-- Projects -->
-        <section class="px-20 mt-10">
+        <section class="px-12 mt-10">
           <h4 class="mb-8 text-3xl font-bold text-center md:text-left" id="projects">Projects</h4>
           <div class="grid grid-cols-1 md:grid-cols-6 my-10 relative project">
             <div class="flex flex-col col-span-2 mb-4 md:mb-0">
@@ -244,13 +220,13 @@
                 <span class="text-lg bg-gray-200 p-[0.1rem] rounded-lg">Inkscape</span>
               </div>
             </div>
-            <div class="flex flex-col col-span-4 ">
-              <p><span class="font-bold font-heading">Jazzed Sips</span> breathes life into a stylish and jazz-inspired coffee shop's online presence. It's built on a foundation of HTML, which structures the content, and utilizes Tailwind CSS to create an elegant and responsive design. Ruby on Rails powers the backend, handling data management, while JavaScript, with the jQuery library, adds dynamic features and enhances user interactions.</p>
+            <div class="flex flex-col col-span-4 text-justify">
+              <p class=""><span class="font-bold font-heading">Jazzed Sips</span> breathes life into a stylish and jazz-inspired coffee shop's online presence. It's built on a foundation of HTML, which structures the content, and utilizes Tailwind CSS to create an elegant and responsive design. Ruby on Rails powers the backend, handling data management, while JavaScript, with the jQuery library, adds dynamic features and enhances user interactions.</p>
             </div>
             <!-- Buttons -->
             <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
               <a href="https://github.com/UmutAkturk14/Jazzed-Sips-202309252243" class="hidden">
-                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-yellow-200 duration-500">
                   <span class="mx-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 16">
@@ -264,7 +240,7 @@
             </div>
           </div>
           <!-- Buttons mobile -->
-          <div class="lg:hidden gap-4 flex justify-end">
+          <div class="lg:hidden gap-4 flex justify-end md:col-span-6">
             <a href="https://github.com/UmutAkturk14/Jazzed-Sips-202309252243">
               <button class="flex justify-center items-center -mt-8 p-2 rounded-lg bg-gray-200">
                 <span class="mx-1">
@@ -291,13 +267,13 @@
                 <span class="text-lg bg-gray-200 p-[0.1rem] rounded-lg">Inkscape</span>
               </div>
             </div>
-            <div class="flex flex-col col-span-4 ">
+            <div class="flex flex-col col-span-4 text-justify">
               <p><span class="font-bold font-heading">Myriad Market</span> is a versatile and dynamic online marketplace web application designed as a marketplace where people can buy, sell, rent, loan properties, vehicles, and services. With an intuitive and responsive user interface and a comprehensive set of features, MM offers a seamless platform for connecting users and facilitating transactions.</p>
             </div>
             <!-- Buttons -->
             <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
               <a href="https://github.com/UmutAkturk14/myriad-market" class="hidden">
-                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-yellow-200 duration-500">
                   <span class="mx-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 16">
@@ -310,7 +286,7 @@
               </a>
             </div>
             <!-- Buttons mobile -->
-            <div class="lg:hidden gap-4 flex justify-end">
+            <div class="lg:hidden gap-4 flex justify-end md:col-span-6">
               <a href="https://github.com/UmutAkturk14/myriad-market">
                 <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
                   <span class="mx-1">
@@ -340,13 +316,13 @@
                 <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">PostgreSQL</span>
               </div>
             </div>
-            <div class="flex flex-col col-span-4 ">
+            <div class="flex flex-col col-span-4 text-justify">
               <p><span class="font-bold font-heading">ZoneFit</span> is a web app made for fitness/healthy living enthusiasts providing searchable workout videos and recipes while mixing it with social media features such as commenting on workouts and recipes, creating posts, commenting on posts, adding/accepting/rejecting friends, chatting in public communities, chatting in direct messages. See the project repository for details.</p>
             </div>
             <!-- Buttons -->
             <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
               <a href="https://github.com/UmutAkturk14/ZoneFit" class="hidden">
-                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-yellow-200 duration-500">
                   <span class="mx-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 16">
@@ -358,7 +334,7 @@
                 </button>
               </a>
               <a href="http://zonefit.life" class="hidden">
-                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-yellow-200 duration-500">
                   <span class="mx-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
                       <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
@@ -369,7 +345,7 @@
               </a>
             </div>
             <!-- Buttons mobile -->
-            <div class="lg:hidden gap-4 flex justify-end">
+            <div class="lg:hidden gap-4 flex justify-end mt-6 md:mt-0 md:col-span-6">
               <a href="https://github.com/UmutAkturk14/ZoneFit">
                 <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
                   <span class="mx-1">
@@ -409,13 +385,13 @@
                 <span class="text-lg bg-blue-200 p-[0.1rem] rounded-lg">PostgreSQL</span>
               </div>
             </div>
-            <div class="flex flex-col col-span-4 ">
+            <div class="flex flex-col col-span-4 text-justify">
               <p><span class="font-heading font-bold">Chic Swap</span> is a high-end design bag marketplace. This elegant platform showcases exclusive offers, facilitates new listings, and empowers users to effortlessly rent exquisite bags for their desired durations.</p>
             </div>
             <!-- Buttons -->
             <div class="absolute bottom-0 right-0 hidden lg:flex mr-8 gap-4">
               <a href="https://github.com/UmutAkturk14/Rent-A-Bag" class="hidden">
-                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-gray-200 duration-500">
+                <button class="flex justify-center items-center p-2 rounded-lg hover:bg-yellow-200 duration-500">
                   <span class="mx-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 16">
@@ -428,7 +404,7 @@
               </a>
             </div>
             <!-- Buttons mobile -->
-            <div class="lg:hidden gap-4 flex justify-end">
+            <div class="lg:hidden gap-4 flex justify-end mt-4 md:-mt-10 md:col-span-6">
               <a href="https://github.com/UmutAkturk14/Rent-A-Bag">
                 <button class="flex justify-center items-center -mt-4 p-2 rounded-lg bg-gray-200">
                   <span class="mx-1">
@@ -496,6 +472,15 @@
     });
 
     $(".project").hover(function () {
+        // over
+        console.log("hovering over a project");
+        $(this).find("a").fadeIn(200);
+      }, function () {
+        // out
+        $(this).find("a").fadeOut(200);
+      }
+    );
+    $(".education").hover(function () {
         // over
         console.log("hovering over a project");
         $(this).find("a").fadeIn(200);
