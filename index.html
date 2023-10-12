@@ -19,6 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://tailwindcomponents.com/component/word-animatio" itemprop="URL">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Umut Akturk | Full Stack Developer</title>
 </head>
 
@@ -121,6 +123,16 @@
         <h1 class="text-5xl sm:text-6xl lg:text-9xl font-heading">Umut Akturk</h1>
         <h2 class="font-light text-2xl sm:text-4xl lg:text-6xl text-gray-600">Full Stack Developer</h2>
       </div>
+      <!-- Services -->
+      <div class="flex items-center justify-center mt-32 text-dark">
+        <div class=" text-center space-y-12">
+            <div class="text-center text-2xl xl:text-4xl">
+              Services offered
+              <div id="animated-words-container" class="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden mt-4 xl:mt-0 text-2xl xl:text-4xl">
+              </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /Name Section -->
     <!-- image section -->
@@ -170,7 +182,6 @@
       </div>
     </section>
     <!-- /image section -->
-    <hr class="border-gray-400 mx-44" />
     <!-- Experience -->
     <section class="px-4 xl:px-12 mt-10">
       <h4 class="mb-8 text-3xl font-bold text-center md:text-left" id="experience">Experience</h4>
@@ -636,7 +647,7 @@
 
     });
 
-
+    // Scroll to section
     function scrollToSection(target) {
     $('.navbar-menu').fadeOut(200);
     var navbarHeight = $("nav").outerHeight(); // Replace with your actual navbar's ID or class
@@ -680,6 +691,70 @@
       }, 700);
     });
   });
-</script>
 
+  // Array of words to be animated
+  const words = ["Full Stack Web Development", "One-Page Website Design", "Static Website Development", "Custom Web Application Development", "Website Redesign and Revamp" ];
+
+  // Function to create and append a span for each word
+  function createWordSpan(word, delay) {
+    return $('<span/>', {
+      text: word,
+      class: `animate-word animate-word-delay-${delay} col-span-full row-span-full font-bold font-heading`
+    });
+  }
+
+  // Function to add words to the container
+  function addWordsToContainer() {
+    const container = $('#animated-words-container');
+    container.empty(); // Clear the container
+    words.forEach((word, index) => {
+      container.append(createWordSpan(word, index));
+    });
+  }
+
+  // Initial setup
+  addWordsToContainer();
+
+  // You can add or remove words from the `words` array as needed
+</script>
+<style>
+  @keyframes word {
+  0% {
+    transform: translateY(100%);
+  }
+  15% {
+    transform: translateY(-10%);
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  40%,
+  100% {
+    transform: translateY(-110%);
+  }
+  }
+
+  .animate-word {
+  animation: word 7s infinite;
+  }
+  .animate-word-delay-1 {
+  animation: word 7s infinite;
+  animation-delay: -1.4s;
+  }
+  .animate-word-delay-2 {
+  animation: word 7s infinite;
+  animation-delay: -2.8s;
+  }
+  .animate-word-delay-3 {
+  animation: word 7s infinite;
+  animation-delay: -4.2s;
+  }
+  .animate-word-delay-4 {
+  animation: word 7s infinite;
+  animation-delay: -5.6s;
+  }
+</style>
 </html>
