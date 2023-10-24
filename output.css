@@ -1446,24 +1446,3 @@ video {
     line-height: 2.5rem;
   }
 }
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: #374151;
-  opacity: 1;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: 0 0 0 5px #374151;
-  border-radius: 10px;
-}
-
-
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #fed7aa;
-  border-radius: 4px;
-}
